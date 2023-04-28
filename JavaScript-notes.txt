@@ -37,3 +37,25 @@ Booleans:
     !== not equal to
     We don't use == & != because it will convert both into same type before comparing
     Lowest priority among all the operations.
+
+Scope
+  After the if else statement using the curly brackets {} is reffered to as Scopes.
+  Variables defined there will not go out of the scope, and hence avoid naming conflicts.
+
+Falsy values
+  false 
+  0
+  ''
+  NaN (not a number)
+  undefined
+  null
+
+If Else Statements
+  Shortcuts:
+    Ternary Operator (?):
+      Example: true ? 'truthy' : 'falsy'
+    Guard Operator (&&):
+      Example: false && 'I am being guarded i.e. not being run'
+    Default Operator (||):
+      Example: currency = 'USD' || 'USD' 
+        here, USD will be printed first but if USD was false, it would've gone for USD.
