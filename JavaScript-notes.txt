@@ -8,4 +8,22 @@ In String:
       Special features in Template String:
         1. You can use ${} to insert any other values.
         2. Multi-line string.
-        
+  Creating a comment:
+    1. Javascript and CSS:
+      /* TEXT */
+      / TEXT /
+    2. HTML
+      <-- TEXT -->
+Variables:
+  Variable names can't be:
+    1. Special words.
+    2. Can't start with words.
+    3. Can't use special characters except _ (underscore) and $ (dollar).
+  Ways to create a Variable:
+    let
+      let variable_name = anything;
+      can't be changed later, and harder to find the meaning cuz it keeps changing.
+    const
+      const variable_name = anything;
+      can't be changed later, i.e. will be constant. 
+      
