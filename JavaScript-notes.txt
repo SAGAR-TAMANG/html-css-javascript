@@ -26,4 +26,14 @@ Variables:
     const
       const variable_name = anything;
       can't be changed later, i.e. will be constant. 
-      
+Booleans:
+  True or False
+  Comparison Operators:
+    > greater than
+    < less than
+    >= greater than or equal to
+    <= less than or equal to
+    === equal to
+    !== not equal to
+    We don't use == & != because it will convert both into same type before comparing
+    Lowest priority among all the operations.
