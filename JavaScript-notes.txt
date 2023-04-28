@@ -1,0 +1,11 @@
+In String:
+  Escape Characters:
+    \' \" \n
+  Three ways to create a string:
+    1. '...'
+    2. "..."
+    3. `...` (Template Strings)
+      Special features in Template String:
+        1. You can use ${} to insert any other values.
+        2. Multi-line string.
+        
