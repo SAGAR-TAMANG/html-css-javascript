@@ -59,3 +59,38 @@ If Else Statements
     Default Operator (||):
       Example: currency = 'USD' || 'USD' 
         here, USD will be printed first but if USD was false, it would've gone for USD.
+
+Objects
+  Accessing values inside an Object 
+    Dot Notation:
+      Example: 
+      > To access a property named 'name' inside the object product.
+      > console.log(product.name);
+    Bracket Notation:
+      Allows us to use including special names that dot notation doesn't allow,
+        be certain that the property is being defined using bracket notation as well.
+
+      Example:
+        > To access a propery named 'name' inside the object product.
+        > console.log(product['name']);
+  Nested Objects
+    Example: 
+      > const product = {
+        name: 'Amazon',
+        rating: {
+          stars: 44,
+          count: 9
+        },
+        fun: function functionName1(){
+          console.log('I am a function inside an Object');
+        }
+      };
+
+      Here, fun is a function. And a function inside an object is known as Method.
+      Other examples of method is console.log(), Math.random(), etcetera.
+
+Converting Javascript to JSON file
+  Stringfy
+    JSON.stringfy(objectName);
+    > Example:
+    > JSON.stringfy(product);
