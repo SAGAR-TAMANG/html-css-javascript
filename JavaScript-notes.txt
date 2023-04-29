@@ -64,18 +64,18 @@ Objects
   Accessing values inside an Object 
     Dot Notation:
       Example: 
-      > To access a property named 'name' inside the object product.
-      > console.log(product.name);
+      > To access a property named 'name' inside the object productObject.
+      > console.log(productObject.name);
     Bracket Notation:
       Allows us to use including special names that dot notation doesn't allow,
         be certain that the property is being defined using bracket notation as well.
 
       Example:
-        > To access a propery named 'name' inside the object product.
-        > console.log(product['name']);
+        > To access a propery named 'name' inside the object productObject.
+        > console.log(productObject['name']);
   Nested Objects
     Example: 
-      > const product = {
+      > const productObject = {
         name: 'Amazon',
         rating: {
           stars: 44,
@@ -89,11 +89,18 @@ Objects
       Here, fun is a function. And a function inside an object is known as Method.
       Other examples of method is console.log(), Math.random(), etcetera.
 
+  Destructuing an Object:
+    You can either do:
+      > const name = productObject.name;
+    or
+      > const { name } = prodcutObject;
+      > const { name, rating.stars } = productObject;
+
 Converting Javascript to JSON file
   Stringfy
     JSON.stringfy(objectName);
     > Example:
-    > jsonString = JSON.stringfy(product);
+    > jsonString = JSON.stringfy(productObject);
 
 Converting JSON file to Javascript
   Parse
@@ -107,3 +114,6 @@ Saving data in Local Storage
     > localStorage.setItem('String_Name', 'This_is_a_value_string');
   getItem
     > localStorage.getItem('AnotherString');
+
+NULL vs UNDEFINED
+  NULL when you want something to be intentionally empty.

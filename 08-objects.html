@@ -3,17 +3,22 @@
   <script>
     let computerMove = '';
     let result = '';
+
+    let score = JSON.parse(localStorage.getItem('score')) || {
+        wins: 0,
+        losses: 0,
+        ties: 0
+      }
     
-    if(score === null){
+    /* // Shifting this whole gimmickery inside the let score itself by putting an OR statement.
+    if(!score){
       score = {
         wins: 0,
         losses: 0,
         ties: 0
       }
     }
-    else {
-      const score = JSON.parse(localStorage.getItem('score'));
-    }
+    */
 
     function pickComputerMove (){
       const randomNumber = Math.random();
