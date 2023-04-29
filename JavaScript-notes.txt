@@ -93,4 +93,17 @@ Converting Javascript to JSON file
   Stringfy
     JSON.stringfy(objectName);
     > Example:
-    > JSON.stringfy(product);
+    > jsonString = JSON.stringfy(product);
+
+Converting JSON file to Javascript
+  Parse
+    JSON.parse(jsonString);
+     Example:
+    > non_jsonString = JSON.parse(jsonString);
+
+Saving data in Local Storage
+  Local storage only supports strings.
+  setItem
+    > localStorage.setItem('String_Name', 'This_is_a_value_string');
+  getItem
+    > localStorage.getItem('AnotherString');
