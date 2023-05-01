@@ -60,6 +60,8 @@ If Else Statements
       Example: currency = 'USD' || 'USD' 
         here, USD will be printed first but if USD was false, it would've gone for USD.
 
+DOM, JSON and LocalStorage are built in objects. 
+
 Objects
   Accessing values inside an Object 
     Dot Notation:
@@ -89,12 +91,14 @@ Objects
       Here, fun is a function. And a function inside an object is known as Method.
       Other examples of method is console.log(), Math.random(), etcetera.
 
-  Destructuing an Object:
+  Destructuring an Object:
     You can either do:
       > const name = productObject.name;
     or
       > const { name } = prodcutObject;
       > const { name, rating.stars } = productObject;
+  Objects are references
+    i.e., they only contain they only refer to variables, they don't store the inside values.
 
 Converting Javascript to JSON file
   Stringfy
@@ -115,5 +119,9 @@ Saving data in Local Storage
   getItem
     > localStorage.getItem('AnotherString');
 
+Removing Local Storage
+  > localStorage.removeItem('score');
+
 NULL vs UNDEFINED
   NULL when you want something to be intentionally empty.
+
