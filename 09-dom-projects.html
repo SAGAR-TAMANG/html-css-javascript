@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <title>DOM Projects</title>
+</head>
+<body>
+  <p>
+    YouTube Subscribe Button
+  </p> 
+  <button class="js-button-subscribe" onclick="
+    subscribe();
+  ">  
+      subscribe
+  </button>  
+  <script> // In this, we're changing the text of the button without refreshing, using JS.
+    function subscribe(){
+      const buttonElement = document.querySelector('.js-button-subscribe');
+    console.log(buttonElement.innerHTML);
+    if (buttonElement.innerHTML === 'subscribe'){
+      buttonElement.innerHTML = 'subscribed';
+    }
+    else {
+      buttonElement.innerHTML = 'subscribe';
+    }
+    }
+  </script>
+</body>
+</html>

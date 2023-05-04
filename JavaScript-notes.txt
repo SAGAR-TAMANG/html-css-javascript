@@ -60,7 +60,7 @@ If Else Statements
       Example: currency = 'USD' || 'USD' 
         here, USD will be printed first but if USD was false, it would've gone for USD.
 
-DOM, JSON and LocalStorage are built in objects. 
+Math, DOM (Document Object), JSON and LocalStorage are built in objects. 
 
 Objects
   Accessing values inside an Object 
@@ -125,3 +125,20 @@ Removing Local Storage
 NULL vs UNDEFINED
   NULL when you want something to be intentionally empty.
 
+DOM (Document Object Model)
+  Combines the HTML and JavaScript together.
+  > document.title = 'THIS IS A TITLE';
+  > document.body 
+  > document.body.innerHTML = '<button>THIS IS A BUTTON</button>';
+  > document.querySelector('button') //This will select a button inside the html body.
+  > document.querySelector('body) // This will select body, making it similar to document.body.
+    >> Example: 
+      document. querySelector('button').innerHTML = 'CHANGED'; // This will change the name of button
+
+
+
+
+
+
+
+      
